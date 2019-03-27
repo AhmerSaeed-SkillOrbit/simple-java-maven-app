@@ -6,7 +6,7 @@ package com.mycompany.app;
 public class App
 {
 
-    private final String message = "111 - This is sample NBO - 111";
+    private final String message = "333 - This is sample NBO - 333";
 
     public App() {}
 
