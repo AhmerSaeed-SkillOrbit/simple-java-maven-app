@@ -36,7 +36,7 @@ public class AppTest
         try {
             assertEquals("222 - This is sample NBO - 222" + System.getProperty("line.separator"), outContent.toString());
         } catch (AssertionError e) {
-            fail("\"message\" is not \"222 - This is sample NBO - 222\"");
+            fail("CATCH - 222 - This is sample NBO - 222");
         }
     }
 
