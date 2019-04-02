@@ -12,7 +12,7 @@ pipeline {
         stage('Build') {
             steps {
                 sh 'mvn -B -DskipTests clean package'
-                sh 'mvn clean verify /home/'
+                sh 'mvn clean install /home/'
             }
         }
         stage('Deliver') {
