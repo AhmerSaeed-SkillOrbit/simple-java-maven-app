@@ -12,10 +12,6 @@ pipeline {
         stage('Build') {
             steps {
                 sh 'mvn -B -DskipTests clean package'
-            }
-        }
-        stage('Tese Case Execution') {
-            steps {
                 sh 'mvn clean verify /home/'
             }
         }
