@@ -14,6 +14,11 @@ pipeline {
                 sh 'mvn -B -DskipTests clean package'
             }
         }
+        stage('Tese Case Execution') {
+             steps {
+                sh 'mvn -B -DskipTests clean package'
+             }
+        }
         stage('Deliver') {
             steps {
                 sh './jenkins/scripts/deliver.sh'
